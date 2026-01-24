@@ -1,5 +1,16 @@
 import React from "react";
 import "./Sidebar.css";
+import { GoHomeFill } from "react-icons/go";
+import { IoGameController } from "react-icons/io5";
+import { FaCarAlt } from "react-icons/fa";
+import { IoMdFootball } from "react-icons/io";
+import { BiSolidCameraMovie } from "react-icons/bi";
+import { FaLaptop } from "react-icons/fa";
+import { IoIosMusicalNotes } from "react-icons/io";
+import { FaBloggerB } from "react-icons/fa";
+import { ImNewspaper } from "react-icons/im";
+
+import user_img1 from "../../assets/user_profile.jpg";
 
 const Sidebar = ({ sidebar }) => {
   return (
@@ -7,47 +18,47 @@ const Sidebar = ({ sidebar }) => {
       <div className="shortcut-links">
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <GoHomeFill className="side-link-icon" />
           <p>Home</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <IoGameController className="side-link-icon" />
           <p>Gaming</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <FaCarAlt className="side-link-icon" />
           <p>Automobiles</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <IoMdFootball className="side-link-icon" />
           <p>Sports</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <BiSolidCameraMovie className="side-link-icon" />
           <p>Entertainment</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <FaLaptop className="side-link-icon" />
           <p>Technology</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <IoIosMusicalNotes className="side-link-icon" />
           <p>Music</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <FaBloggerB className="side-link-icon" />
           <p>Blogs</p>
         </div>
         <div className="side-link">
           {/* img */}
-          <img src="" alt="" />
+          <ImNewspaper className="side-link-icon" />
           <p>News</p>
         </div>
         <hr />
@@ -57,24 +68,16 @@ const Sidebar = ({ sidebar }) => {
         <h3>Subscribed</h3>
 
         <div className="side-link">
-          <img src="" alt="" />
+          <img src={user_img1} alt="" />
           <p>PewDiepie</p>
         </div>
         <div className="side-link">
-          <img src="" alt="" />
+          <img src={user_img1} alt="" />
           <p>mrBeast</p>
         </div>
         <div className="side-link">
-          <img src="" alt="" />
+          <img src={user_img1} alt="" />
           <p>Justin beaber</p>
-        </div>
-        <div className="side-link">
-          <img src="" alt="" />
-          <p>5-Minute</p>
-        </div>
-        <div className="side-link">
-          <img src="" alt="" />
-          <p>Imposible</p>
         </div>
       </div>
     </div>
