@@ -75,3 +75,8 @@
   font-size: 14px;
   text-align: left;
 }
+
+.side-link.active .side-link-icon {
+  padding-bottom: 2px;
+  border-bottom: 3px solid red;
+}

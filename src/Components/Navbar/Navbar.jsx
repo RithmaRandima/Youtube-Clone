@@ -7,6 +7,7 @@ import { RiVideoUploadFill } from "react-icons/ri";
 import { VscExtensions } from "react-icons/vsc";
 import { IoIosNotifications } from "react-icons/io";
 import user_profile from "../../assets/user_profile.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
   return (
@@ -19,11 +20,12 @@ const Navbar = ({ setSidebar }) => {
               setSidebar((prev) => (prev === false ? true : false));
             }}
           />
-
-          <span className="logo">
-            <SiYoutubemusic className="logo-icon" />
-            ReelStories
-          </span>
+          <Link to={"/"}>
+            <span className="logo">
+              <SiYoutubemusic className="logo-icon" />
+              ReelStories
+            </span>
+          </Link>
         </div>
 
         <div className="nav-middle flex-div">
